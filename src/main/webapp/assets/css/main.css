@@ -1,0 +1,147 @@
+/* 首页 */
+body {
+    background-image: url("/assets/images/hipc_23020747.jpg");
+    background-size: cover;
+
+}
+
+.wrapper {
+    margin: 0 auto;
+    /*width: 1200px;*/
+}
+
+/* 标题 */
+.titled {
+    /*background-color: #333;*/
+    /*width: 1200px;*/
+    height: 70px;
+    width:100%;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+.titled p {
+    display: block;
+    margin: 10px auto;
+    font-size: 30px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(226, 252, 255);
+
+}
+
+/* 正文 */
+.container {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    right: 5%;
+    bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(255,255,255,0.3);
+    border:none;
+    border-radius: 5px;
+}
+
+/* Content 样式 */
+.content {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; /* 间距为 10px */
+
+}
+
+/* Content 中的栅格项 */
+.grid-item {
+    flex: 1 0 calc(33.333% - 10px); /* 计算栅格项的宽度，减去间距 */
+    /* 实际项目中，你可能需要更复杂的样式，根据需要调整 */
+    padding: 10px;
+    background-color:	rgba(229,238,204,0.7);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.grid-item-nav {
+    /* 实际项目中，你可能需要更复杂的样式，根据需要调整 */
+    background-color: rgba(255,255,255,0);
+    padding: 10px;
+}
+
+/* 导航栏 */
+.navi {
+    position: relative;
+}
+
+ul{
+    padding: 0;
+}
+
+.navi ul li {
+    background-color:	rgba(229,238,204,0.7);
+    border:none;
+    box-shadow: 1px 2px 5px 2px gray;
+    transition: all 0.5s;
+    margin-bottom:0;
+    cursor: pointer;
+    border-radius: 2px;
+    width:200px;
+}
+
+.navi ul li.active{
+    background-color:	rgba(76,175,80,1.000);
+    color: white;
+}
+
+
+/* 设置圆角 */
+.navi ul li:first-child{
+    border-radius: 5px 5px 0  0 ;
+}
+
+.navi ul li:last-child{
+    border-radius: 0  0 5px 5px ;
+}
+
+
+
+.navi ul li:hover {
+    /*background-color: aqua;*/
+    background-color: #555;
+    color:white;
+    transform: translateX(-5px);
+}
+
+
+.navi ul li a {
+    display: block;
+    padding: 8px;
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #181717;
+}
+
+.navi ul li a:hover {
+    color:#fff;
+
+}
+
+/* 正文 */
+.wrapp {
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+
+.footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
